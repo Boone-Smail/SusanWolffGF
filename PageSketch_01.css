@@ -93,6 +93,7 @@ figure#top-of-page {
     border-width: 0px;
 }
 
+/*  Not appearing in git? I declare shenanigans!    */
 figure#top-of-page > img {
     display: block;
     width: 100%;
