@@ -77,8 +77,15 @@ figure figcaption p {
     font-size: 25px;
 }
 
+figure figcaption img {
+    width: 432px;
+    height: 270px;
+}
+
 figure figcaption h1#susan-wolff {
     font-size: 70px;
+    display: block;
+    bottom: 0px;
 }
 
 figure#top-of-page {
@@ -86,7 +93,7 @@ figure#top-of-page {
     border-width: 0px;
 }
 
-figure#top-of-page img {
+figure#top-of-page > img {
     display: block;
     width: 100%;
 }
@@ -101,6 +108,7 @@ nav, nav ul, nav ul li {
 div#nav {
     width: 100%;
     background: rgb(0,139,149);
+    height: 50px;
     z-index: -1;
 }
 
@@ -119,7 +127,7 @@ nav ul {
 nav ul li {
     position: relative;
     float: left;
-    width: 33.3%;
+    width: 25%;
     text-align:center;
     background:rgb(0,139,149);
     color: hsla(180,20%,75%,1);
