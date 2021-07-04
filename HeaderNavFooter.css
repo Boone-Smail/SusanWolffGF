@@ -32,6 +32,12 @@ html {
     border:0px;
     padding:0px;
     font-family: CampaignFont;
+    scrollbar-width: 0px;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0px;
 }
 
 body {
@@ -45,226 +51,397 @@ a {
     color: inherit;
 }
 
-/*      PAGE HEADER RELATED
-    All bellow relates to the
-    image and 
-    "Susan Wolff for City Commission" */
-figure {
-    position: relative;
-    overflow: hidden;
+/*  Desktop layouts */
+@media only screen and (min-width: 720px) {
+    /*      PAGE HEADER RELATED
+        All bellow relates to the
+        image and 
+        "Susan Wolff for City Commission" */
+    figure {
+        position: relative;
+        overflow: hidden;
+    }
+
+    figure figcaption#page-header {
+        margin: 0px;
+        border: 0px;
+        padding: 10px;
+        padding-left:70px;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+        position: absolute;
+        color: hsla(0, 0%, 100%, 0.85);
+        background: linear-gradient(to top, hsla(180,50%,30%,0.75), hsla(180, 50%, 30%, 0));
+        transform: translate(0px, 0px);
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+
+        font-family: CampaignFont;
+        font-weight: 500;
+        text-shadow: 2px 2px hsla(180,50%,30%,0.75);
+
+        transition: ease-out 0.35s;
+        overflow: hidden;
+    }
+
+    figure figcaption#page-header:hover {
+        padding-bottom:40px;
+        text-shadow: 7px 5px 10px hsla(180,50%,30%,0.75);
+        color: rgb(255, 231, 0);
+    }
+
+    figure figcaption h1, figure figcaption p {
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+    }
+
+    figure figcaption p {
+        padding-left: 35px;
+        font-size: 25px;
+    }
+
+    figure figcaption img {
+        width: 432px;
+        height: 270px;
+    }
+
+    figure figcaption h1#susan-wolff {
+        font-size: 70px;
+        display: block;
+        bottom: 0px;
+    }
+
+    figure#top-of-page {
+        margin: 0px;
+        border-width: 0px;
+    }
+
+    /*  Not appearing in git? I declare shenanigans!    */
+    figure#top-of-page > img {
+        display: block;
+        width: 100%;
+    }
+
+    /* NAV BAR CONTENT  */
+    nav, nav ul, nav ul li {
+        margin: 0px;
+        border: 0px;
+        padding:0px;
+    }
+
+    div#nav {
+        width: 100%;
+        background: rgb(0,139,149);
+        height: 50px;
+        z-index: -1;
+    }
+
+    div#nav img#navicon {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        background:rgb(0,139,149);
+    }
+
+    nav ul {
+        margin-left: auto;
+        margin-right: auto;
+        list-style-type:none;
+        width: 72.5%;
+    }
+
+    nav ul li {
+        position: relative;
+        float: left;
+        width: 25%;
+        text-align:center;
+        background:rgb(0,139,149);
+        color: hsla(180,20%,75%,1);
+        font-size: 35px;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-weight: 700;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        transition: ease-out 0.35s;
+    }
+
+    nav ul li div {
+        margin-left: auto;
+        margin-right:auto;
+        display: block;
+        height: 100%;
+        width:100%;
+        background-color:rgb(0,139,149);
+        transition: ease-out 0.35s;
+        transform: scaleX(0.995);
+    }
+
+    nav ul li:hover {
+        padding-bottom: 10px;
+    }
+
+    nav ul li:hover div {
+        /* transform: scaleX(0.98); */
+        padding-top:5px;
+        color: rgb(255, 231, 0);
+    }
+
+    /*  FOOTER  */
+    footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background: rgb(0,139,149);
+    }
+
+    footer p {
+        margin: 0px;
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        padding-top: 5px;
+        padding-left: 5%;
+        color: hsla(180,20%,75%,1);
+        border: 0px;
+    }
+
+    /*  FACEBOOK POST   */
+    div#facebook-post {
+        float: right;
+        border: solid 10px rgb(0,139,149);
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    div#facebook-post iframe {
+        margin: 0px;
+    }
+
+    /*  DONATE BUTTON   */
+    div#donate {
+        position:fixed;
+        padding: 10px;
+        text-align: center;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        background: rgb(0,139,149);
+        padding-right:75px;
+        bottom: 50px;
+        right: -65px;
+        transition: ease-out 0.35s;
+    }
+
+    div#donate p {
+        display: relative;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        padding: 7px;
+        background: rgb(0,139,149);
+        font-size: 35px;
+        font-weight: 900;
+        color: hsla(180,20%,75%,1);
+        transition: ease-out 0.35s;
+    }
+
+    div#donate:hover {
+        bottom: 50px;
+        right: 0px;
+    }
+
+    div#donate:hover p {
+        color: rgb(255, 231, 0);
+    }
+
+    /*  CONTENT */
+    div#content-container {
+        margin-right: auto;
+        margin-left: auto;
+        width: 75%;
+        background-color: rgb(0,139,149);
+    }
+
+    div#content {
+        margin-right: 2%;
+        margin-left: 2%;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top:75px;
+        padding-bottom: 25px;
+        text-align: justify;
+        background-color: hsla(180,20%,75%,1);
+        color: hsla(180,50%,20%,1);
+        font-size: 20px;
+        /* font-family: Arial, Helvetica, sans-serif; */
+    }
 }
 
-figure figcaption#page-header {
-    margin: 0px;
-    border: 0px;
-    padding: 10px;
-    padding-left:70px;
-    padding-bottom: 20px;
-    width: 100%;
-    text-align: left;
-    font-size: 20px;
-    position: absolute;
-    color: hsla(0, 0%, 100%, 0.85);
-    background: linear-gradient(to top, hsla(180,50%,30%,0.75), hsla(180, 50%, 30%, 0));
-    transform: translate(0px, 0px);
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-
-    font-family: CampaignFont;
-    font-weight: 500;
-    text-shadow: 2px 2px hsla(180,50%,30%,0.75);
-
-    transition: ease-out 0.35s;
-    overflow: hidden;
+/*  Ipad Pro    */
+@media only screen and (width: 1024px) {
+    div#facebook-post {
+        display: none;
+    }
 }
 
-figure figcaption#page-header:hover {
-    padding-bottom:40px;
-    text-shadow: 7px 5px 10px hsla(180,50%,30%,0.75);
-    color: rgb(255, 231, 0);
-}
+/*  Mobile layouts  */
+@media only screen and (max-width: 720px) {
+    html {
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+    }
+    
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*  HIDE FACEBOOK POST  */
+    div#facebook-post {
+        display: none;
+    }
+    
+    /*  FIGURE  */
+    figure {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
 
-figure figcaption h1, figure figcaption p {
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-}
+    figure img {
+        width: 100%;
+    }
 
-figure figcaption p {
-    padding-left: 35px;
-    font-size: 25px;
-}
+    figure figcaption {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: 0px;
+        background: linear-gradient(to top, hsla(180,50%,30%,0.75), hsla(180, 50%, 30%, 0));
+    }
 
-figure figcaption img {
-    width: 432px;
-    height: 270px;
-}
+    figure figcaption img {
+        width: 35%;
+    }
 
-figure figcaption h1#susan-wolff {
-    font-size: 70px;
-    display: block;
-    bottom: 0px;
-}
+    figure figcaption h1 {
+        display: none;
+    }
 
-figure#top-of-page {
-    margin: 0px;
-    border-width: 0px;
-}
+    /*  NAV */
+    div#nav {
+        background: rgb(0,139,149);
+    }
 
-/*  Not appearing in git? I declare shenanigans!    */
-figure#top-of-page > img {
-    display: block;
-    width: 100%;
-}
+    div#nav img#navicon {
+        height: 25px;
+        margin-top: 5px;
+        margin-left: 25px;
+    }
 
-/* NAV BAR CONTENT  */
-nav, nav ul, nav ul li {
-    margin: 0px;
-    border: 0px;
-    padding:0px;
-}
+    div#nav nav {
+        display: none;
+    }
 
-div#nav {
-    width: 100%;
-    background: rgb(0,139,149);
-    height: 50px;
-    z-index: -1;
-}
+    div#nav img#navicon:hover+nav, div#nav nav:hover {
+        display: block;
+    }
 
-nav {
-    width: 100%;
-    background:rgb(0,139,149);
-}
+    nav ul {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
 
-nav ul {
-    margin-left: auto;
-    margin-right: auto;
-    list-style-type:none;
-    width: 72.5%;
-}
+    nav ul li {
+        list-style-type: none;
+        font-size: 20px;
+        border-bottom: 1px solid rgb(0,34,68);
+        width: 100%;
+        padding: 5px;
+        padding-left: 20px;
+        color: hsla(180,20%,75%,1);
+    }
 
-nav ul li {
-    position: relative;
-    float: left;
-    width: 25%;
-    text-align:center;
-    background:rgb(0,139,149);
-    color: hsla(180,20%,75%,1);
-    font-size: 35px;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-weight: 700;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    transition: ease-out 0.35s;
-}
+    nav ul li:nth-child(1) {
+        border-top: 1px solid rgb(0,34,68);
+    }
 
-nav ul li div {
-    margin-left: auto;
-    margin-right:auto;
-    display: block;
-    height: 100%;
-    width:100%;
-    background-color:rgb(0,139,149);
-    transition: ease-out 0.35s;
-    transform: scaleX(0.995);
-}
+    /*  CONTENT     */
+    div#content-container {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        background: rgb(0,139,149);
+    }
 
-nav ul li:hover {
-    padding-bottom: 10px;
-}
+    div#content {
+        margin-left: 10px;
+        margin-right: 10px;
+        background: hsla(180,20%,75%,1);
+        padding-left: 10px;
+        padding-right: 10px;
+        color: hsla(180,50%,20%,1);
+        padding-bottom: 90px;
+    }
 
-nav ul li:hover div {
-    /* transform: scaleX(0.98); */
-    padding-top:5px;
-    color: rgb(255, 231, 0);
-}
+    div#content h2 {
+        padding-top: 10px;
+    }
 
-/*  FOOTER  */
-footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    background: rgb(0,139,149);
-}
+    div#content p {
+        font-size: 16px;
+    }
 
-footer p {
-    margin: 0px;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    padding-top: 5px;
-    padding-left: 5%;
-    color: hsla(180,20%,75%,1);
-    border: 0px;
-}
+    /*  DONATE  */
+    div#donate {
+        position: fixed;
+        background: rgb(0,139,149);
+        bottom: 50px;
+        right: 0px;
+        padding: 10px;
+        padding-right: 30px;
+        border-left: 2px solid rgb(0,34,68);
+        border-top: 2px solid rgb(0,34,68);
+        border-bottom: 2px solid rgb(0,34,68);
+    }
 
-/*  FACEBOOK POST   */
-div#facebook-post {
-    float: right;
-    border: solid 10px rgb(0,139,149);
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
+    div#donate p {
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+        text-align: left;
+        color: hsla(180,20%,75%,1);
+    }
 
-div#facebook-post iframe {
-    margin: 0px;
-}
+    /*  FOOTER  */
+    footer {
+        width: 100%;
+        background: rgb(0,139,149);
+        margin: 0px;
+        padding: 0px;
+        position: fixed;
+        bottom: 0px;
+        border-top: 2px solid rgb(0,34,68);
+    }
 
-/*  DONATE BUTTON   */
-div#donate {
-    position:fixed;
-    padding: 10px;
-    text-align: center;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    background: rgb(0,139,149);
-    padding-right:75px;
-    bottom: 50px;
-    right: -65px;
-    transition: ease-out 0.35s;
-}
-
-div#donate p {
-    display: relative;
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    padding: 7px;
-    background: rgb(0,139,149);
-    font-size: 35px;
-    font-weight: 900;
-    color: hsla(180,20%,75%,1);
-    transition: ease-out 0.35s;
-}
-
-div#donate:hover {
-    bottom: 50px;
-    right: 0px;
-}
-
-div#donate:hover p {
-    color: rgb(255, 231, 0);
-}
-
-/*  CONTENT */
-div#content-container {
-    margin-right: auto;
-    margin-left: auto;
-    width: 75%;
-    background-color: rgb(0,139,149);
-}
-
-div#content {
-    margin-right: 2%;
-    margin-left: 2%;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top:75px;
-    padding-bottom: 25px;
-    text-align: justify;
-    background-color: hsla(180,20%,75%,1);
-    color: hsla(180,50%,20%,1);
-    font-size: 20px;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    footer p {
+        margin: 0px;
+        font-size: 15px;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        color: hsla(180,20%,75%,1);
+    }
 }

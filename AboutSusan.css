@@ -1,0 +1,45 @@
+@charset "utf-8";
+@font-face {
+    font-family: CampaignFont;
+    src: url(Antique_Olive_BQ_Regular.otf);
+}
+
+div#content h2 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    text-align: center;
+}
+
+div#content p {
+    font-size: 24px;
+    text-indent: 3%;
+}
+
+div#content p:nth-child(1) {
+    margin: 0px;
+    padding-top: 0px;
+}
+
+nav ul li:nth-child(1) div{
+    background-image: linear-gradient(to top, rgb(255, 231, 0), hsla(180,20%,75%,1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgb(0, 0, 0, 0);
+}
+
+nav ul li:nth-child(1):hover div {
+    color:rgb(255, 231, 0);
+}
+
+@media screen and (max-width: 720px) {
+    div#content h2 {
+        padding: 0px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    div#content p {
+        font-size: 20px;
+    }
+}

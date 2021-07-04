@@ -1,0 +1,94 @@
+@charset "utf-8";
+@font-face {
+    font-family: CampaignFont;
+    src: url(Antique_Olive_BQ_Regular.otf);
+}
+
+div#content p:nth-child(4) {
+    margin: 0px;
+    padding-top: 0px;
+}
+
+nav ul li:nth-child(4) div{
+    background-image: linear-gradient(to top, rgb(255, 231, 0), hsla(180,20%,75%,1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgb(0, 0, 0, 0);
+}
+
+@media only screen and (min-width: 721px) {
+    
+    div#content h1 {
+        margin: 0px;
+        font-size: 50px;
+        padding-left: 50px;
+        text-decoration: underline;
+    }
+
+    div#content h2 {
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    div#content h1#get-involved {
+        font-size: 75px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    div#content h1#vote {
+        text-align: center;
+        font-size: 75px;
+        padding: 0px;
+        text-decoration: none;
+    }
+
+    div#content p {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        height: 100%;
+    }
+
+    div#content {
+        padding-bottom: 100px;
+    }
+
+    div#content h1 {
+        margin-bottom: 0px;
+        text-decoration: underline;
+    }
+
+    div#content h1#get-involved {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 15px;
+        font-size: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    div#content h1#vote {
+        padding: 0px;
+        margin: 0px;
+        font-size: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    div#content h2 {
+        margin: 0px;
+        text-align: center;
+    }
+
+    div#content p {
+        margin-top: 0px;
+        text-indent: 5%;
+    }
+}
