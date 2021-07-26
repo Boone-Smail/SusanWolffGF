@@ -51,36 +51,9 @@
                 <div id="facebook-post">
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FsWolff.gf&tabs=timeline&width=500&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="margin:0px;border:0px;padding:0px;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
-                <script>
-                    var LoadCDScripts = function () {
-                        var cdscript = document.createElement('script');
-                        cdscript.onerror = function (e) {
-                            document.head.removeChild(this);
-                            setTimeout(LoadCDScripts, 1750);
-                        };
-                        cdscript.onload = function () {
-                            CustomDonations.BuildForm({
-                            account: '31514777-e8a5-49af-be60-4fa1a7f7f885',
-                            form: 'fdf6cd96-f9c5-4692-8034-47d6bed95d04',
-                            allocation: null, /* optional. Use an allocation ID, like 'AH664' (w/ quotes) to be default selected on form load */
-                            memberId: null, /* optional. If the current user is authenticated, you can insert their user ID, like '02943' (with quotes) */
-                            apiVersion: 'v1',
-                            interval: null, /* if null, then user must select one time or recurring (if enabled). Optionally can set to 'once', 'monthly','quarterly', or 'yearly' */
-                            loadingText: 'Loading Secure Form...',
-                            paymentVersion: 2, /*  1: for modal payment window. 2: for inline payment with Google/Apple Pay options */
-                            baseUrl: 'https://api.customdonations.com',
-                            mode: 'live', /* change to 'test' to run in test mode. Use card 4242 4242 4242 4242 for testing. */
-                        });
-                        };
-                        cdscript.src = "https://api.customdonations.com/v1/js/form-builder.min.js?v=" + new Date().getTime();
-                        document.head.appendChild(cdscript);
-                    }
-                    LoadCDScripts();
-                    </script>
             </div>
         </div>
         <div id="CustomDonationsForm"></div>
-
     </body>
 
     <footer>
@@ -89,4 +62,3 @@
         </p>
     </footer>
 </html>
-
