@@ -16,6 +16,11 @@ nav ul li:nth-child(2):hover div {
 }
 
 @media only screen and (min-width: 721px) {
+    html {
+        background: url(dam_01.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    
     div#content h1 {
         margin: 0px;
         font-size: 75px;

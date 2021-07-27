@@ -34,6 +34,10 @@ p.cd-powered-by {
 }
 
 @media only screen and (min-width: 721px) {
+    html {
+        background: url(federal\ courthouse\ with\ river.jpg) no-repeat center center;
+        background-size: cover;
+    }
 
     /*  BUTTON HEADERS  */
     div#CustomDonationsForm h2 {

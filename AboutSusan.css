@@ -32,6 +32,13 @@ nav ul li:nth-child(1):hover div {
     color:rgb(255, 231, 0);
 }
 
+@media screen and (min-width: 721px) {
+    html {
+        background: url(depot\ trail\ 2.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+
 @media screen and (max-width: 720px) {
     div#content h2 {
         padding: 0px;
