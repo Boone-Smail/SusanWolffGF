@@ -4,6 +4,10 @@
     src: url(Antique_Olive_BQ_Regular.otf);
 }
 
+html {
+    font-family: CampaignFont;
+}
+
 div#facebook-post {
     display: none;
 }
@@ -22,6 +26,12 @@ div#CustomDonationsForm h2 {
 
 @media only screen and (min-width: 721px) {
 
+    /*  BUTTON HEADERS  */
+    div#CustomDonationsForm h2 {
+        font-size: 35px;
+        margin-left: 3%;
+    }
+    
     /*  BUTTONS */
     div#CustomDonationsForm {
         width: 75%;
@@ -33,11 +43,11 @@ div#CustomDonationsForm h2 {
     }
 
     div#cd-giving-form-wrapper {
-        width: 100%;
+        width: 96%;
         margin: 0px;
         padding: 0px;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: auto;
+        margin-right: auto;
         padding: 10px;
         padding-top: 20px;
         padding-bottom: 50px;
@@ -51,7 +61,6 @@ div#CustomDonationsForm h2 {
         padding-right: 5%;
         font-family: CampaignFont;
         font-size: 20px;
-        margin-left: 5%;
         border: 5px solid rgb(0, 139, 149);
         background-color: hsla(180,20%,75%,1);
         color: rgb(0,139,149);
@@ -96,5 +105,13 @@ div#CustomDonationsForm h2 {
         width: 20px;
         padding: 0px;
         margin: 0px;
+    }
+
+    div.cd-donation-currency-input {
+        height:30px;
+    }
+
+    div.cd-donation-currency-input input {
+        height:30px;
     }
 }
