@@ -1,0 +1,65 @@
+@charset "utf-8";
+@font-face {
+    font-family: CampaignFont;
+    src: url(Antique_Olive_BQ_Regular.otf);
+}
+
+div#facebook-post {
+    display: none;
+}
+
+@media only screen and (min-width: 721px) {
+
+    /*  BUTTONS */
+    div#CustomDonationsForm {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div#CustomDonationsForm div#cd-set-donation-amt button {
+        float: left;
+        padding: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-family: CampaignFont;
+        font-size: 20px;
+        margin-left: 20px;
+        border: 5px solid rgb(0, 139, 149);
+        background-color: hsla(180,20%,75%,1);
+        color: rgb(0,139,149);
+        transition: ease-out 0.2s;
+    }
+
+    div#CustomDonationsForm div#cd-set-donation-amt button:hover {
+        background-color: rgb(0,139,149);
+        color: hsla(180,20%,75%,1);
+    }
+
+    div#CustomDonationsForm div#cd-set-donation-amt button:focus {
+        background-color: rgb(0,139,149);
+        color: rgb(255,231,0);
+    }
+
+    div#CustomDonationsForm div#cd-set-donation-amt button:last-of-type::after {
+        clear: both;
+        float: none;
+    }
+
+    /*  CUSTOM DONATION INPUT   */
+    div#cd-gift-amt-div::before {
+        clear: both;
+        float: none;
+    }
+
+    div#cd-gift-amt-div{
+        clear: both;
+        float: none;
+        /* color: rgb(0,34,68); */
+        color: hsla(180,50%,20%,1);
+    }
+
+    div#cd-gift-amt-div input {
+        float: left;
+    }
+}
