@@ -153,6 +153,7 @@ p.cd-powered-by {
         width: 100%;
         background-color: rgb(0, 139, 149);
         color: hsla(180,50%,20%,1);
+        padding-bottom: 50px;
     }
 
     div#CustomDonationsForm h2 {
