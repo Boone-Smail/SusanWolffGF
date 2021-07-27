@@ -33,6 +33,9 @@ div#CustomDonationsForm h2 {
     }
 
     div#cd-giving-form-wrapper {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
         margin-left: 2%;
         margin-right: 2%;
         padding: 10px;
@@ -53,7 +56,6 @@ div#CustomDonationsForm h2 {
         background-color: hsla(180,20%,75%,1);
         color: rgb(0,139,149);
         transition: ease-out 0.2s;
-        width: 20%;
     }
 
     div#CustomDonationsForm div#cd-set-donation-amt button:hover {
