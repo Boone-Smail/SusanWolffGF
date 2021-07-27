@@ -152,6 +152,7 @@ p.cd-powered-by {
     div#CustomDonationsForm {
         width: 100%;
         background-color: rgb(0, 139, 149);
+        color: hsla(180,50%,20%,1);
     }
 
     div#cd-giving-form-wrapper {
@@ -160,6 +161,15 @@ p.cd-powered-by {
         margin-right: auto;
         background-color: hsla(180,20%,75%,1);
         padding: 10px;
+    }
+
+    .cd-top-buffer {
+        margin: 0px;
+        margin-top: 0px;
+    }
+
+    div.cd-donation-currency {
+        color: hsla(180,50%,20%,1);
     }
 
     /*  BUTTONS */
@@ -184,6 +194,12 @@ p.cd-powered-by {
     div#CustomDonationsForm div#cd-set-donation-amt button:focus {
         background: rgb(0,139,149);
         color: rgb(255,231,0);
+    }
+
+    /*  DO YOU WANT A YARD SIGN?    */
+    div.cd-float-label span {
+        color: hsla(180,50%,20%,1);
+        font-size: 20px;
     }
 
     /*  REVIEW AND PAY BUTTON   */
