@@ -22,6 +22,11 @@ div#content-container {
 
 div#CustomDonationsForm h2 {
     margin: 0px;
+    color: hsla(180,50%,20%,1);
+}
+
+p.cd-powered-by {
+    color: rgb(0, 139, 149);
 }
 
 @media only screen and (min-width: 721px) {
@@ -117,6 +122,13 @@ div#CustomDonationsForm h2 {
 
     /*  BOTTOM INFO */
     div.cd-field-wrap span {
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    /*  REVIEW AND PAY BUTTON   */
+    button#cd-review-submit {
+        background-color: rgb(0, 139, 149);
+        border-color: rgb(0, 139, 149);
+        color: hsla(180,20%,75%,1);
     }
 }
