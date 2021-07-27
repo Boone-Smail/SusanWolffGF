@@ -157,6 +157,7 @@ p.cd-powered-by {
 
     div#cd-giving-form-wrapper {
         width: 90%;
+        margin: 0px;
         margin-left: auto;
         margin-right: auto;
         background-color: hsla(180,20%,75%,1);
