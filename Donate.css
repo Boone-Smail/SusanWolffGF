@@ -197,6 +197,11 @@ p.cd-powered-by {
         color: rgb(255,231,0);
     }
 
+    /*  BOTTOM INFO */
+    div.cd-field-wrap input {
+        padding: 0px;
+    }
+
     /*  DO YOU WANT A YARD SIGN?    */
     div.cd-float-label span {
         color: hsla(180,50%,20%,1);
