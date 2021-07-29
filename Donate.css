@@ -150,6 +150,14 @@ p.cd-powered-by {
     div#CustomDonationsForm table {
         font-size: 30px;
     }
+
+    td.cd-gift-total {
+        font-size: 30px;
+    }
+
+    span#DonationInfo-AmountTotalFixed {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 720px) {
