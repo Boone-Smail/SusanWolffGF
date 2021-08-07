@@ -51,6 +51,10 @@ a {
     color: inherit;
 }
 
+h1#susan-wolff {
+    font-size: 70px;
+}
+
 /*  Desktop layouts */
 @media only screen and (min-width: 720px) {
     /*      PAGE HEADER RELATED
@@ -110,7 +114,6 @@ a {
     }
 
     figure figcaption h1#susan-wolff {
-        font-size: 70px;
         display: block;
         bottom: 0px;
     }
@@ -282,6 +285,52 @@ a {
     }
 }
 
+/*  IPAD STYLES */
+@media screen and (max-width: 800px) {
+
+    /*  Top of page figure  */
+    figcaption#page-header h1 {
+        font-size: 50px;
+    }
+
+    figcaption#page-header img {
+        width: 240px;
+        height: 128px;
+    }
+
+    /*  Facebook Post   */
+    div#facebook-post {
+        float: none;
+        margin: 0px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    div#facebook-post iframe {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div#content {
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    div#nav li {
+        font-size: 27px;
+    }
+
+    div#content h2 {
+        margin-top: 20px;
+    }
+
+    div#content p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 /*  Ipad Pro    */
 @media only screen and (width: 1024px) {
     div#facebook-post {
@@ -400,7 +449,7 @@ a {
     }
 
     div#content p {
-        font-size: 16px;
+        font-size: 110%;
     }
 
     /*  DONATE  */

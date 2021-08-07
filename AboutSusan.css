@@ -12,7 +12,7 @@ div#content h2 {
 }
 
 div#content p {
-    font-size: 24px;
+    font-size: 110%;
     text-indent: 3%;
 }
 
@@ -30,6 +30,16 @@ nav ul li:nth-child(1) div{
 
 nav ul li:nth-child(1):hover div {
     color:rgb(255, 231, 0);
+}
+
+@media screen and (max-width: 800px) {
+    div#content h2 {
+        margin-top: 20px;
+    }
+
+    figcaption#page-header h1 {
+        font-size: 50px;
+    }
 }
 
 @media screen and (min-width: 721px) {
